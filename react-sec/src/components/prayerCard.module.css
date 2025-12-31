@@ -1,0 +1,87 @@
+/* prayerCard.module.css */
+
+@keyframes shimmer {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.activeprayer {
+  border-radius: 12px;
+  margin: 2px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.5px;
+  text-align: center;
+  width: 135px;
+  padding: 10px 0px;
+  height: 170px;
+  color: white;
+
+  background-color: rgba(228, 192, 123, 0.8); /* muted gold */
+  
+  
+  background-size: 200% 100%;
+
+  animation: shimmer 3s linear infinite;
+
+  /* border: 1px solid yellow; */
+  box-sizing: border-box;
+}
+
+.prayerName {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.prayerTime {
+  font-size: 27px;
+  font-weight: 600;
+  margin-top: 4px;
+  color: white;
+  text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  object-fit: contain;
+}
+
+.prayerCard {
+  border-radius: 12px;
+  margin: 2px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.3px;
+  text-align: center;
+  width: 130px;
+  padding: 10px 0px 10px 0px;
+  height: 170px;
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  
+}
+
+.prayerCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: auto; /* spacing between cards */
+  flex-wrap: nowrap; /* or wrap if you want to allow wrapping */
+  /* border: 1px solid; */
+  
+  
+}
+
+.iqamah {
+  font-size: 14px;
+  
+}

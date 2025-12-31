@@ -1,0 +1,180 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+   /*border: 1px solid goldenrod;*/
+  /*Uncomment for debugging */
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  border: none;
+}
+
+body {
+  background-image: url(./assets/back-.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* MAIN CENTERING */
+.fit-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+/* MOBILE SCALING */
+/* MOBILE SCALING + SCROLL */
+/*@media (max-width: 1280px) {*/
+/*  .dashboard {*/
+/*    border: 1px solid goldenrod;*/
+/*    transform: scale(0.5);       !* scale down to fit *!*/
+/*    transform-origin: top left;  !* scale from top-left corner *!*/
+/*  }*/
+/*  .info{*/
+
+/*  }*/
+/*  .supplication{*/
+/*  }*/
+/*  .prayerbar{*/
+/*  }*/
+/*}*/
+
+
+
+
+/* DASHBOARD GRID */
+.dashboard {
+  display: grid;
+  width: 1280px;
+  height: 720px;
+
+  grid-template-areas:
+    "info supplication"
+    "info prayerbar";
+  grid-template-columns: 416px 832px;
+  grid-template-rows: 482px 206px;
+
+  gap: 16px;
+  padding: 14px;
+  padding-bottom: 30px;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  overflow-x: auto;
+  overflow-y: auto
+;
+
+  /* width: auto;
+  height: auto; */
+}
+
+/* INFO CARD */
+.info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 16px;
+  font-size: 2vh;
+  color: #fefefe;
+  /* max-width: 100%; */
+
+  background: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.1),
+    rgba(255, 255, 255, 0.06),
+    rgba(0, 0, 0, 0.1)
+  );
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8), 0 8px 20px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(px);
+  margin-bottom: 16px;
+}
+
+/* SUPPLICATION */
+.supplication {
+  grid-area: supplication;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 16px;
+
+  background: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.2),
+    rgba(255, 255, 255, 0.03),
+    rgba(0, 0, 0, 0.2)
+  );
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8), 0 8px 20px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+/* PRAYER BAR */
+.prayerbar {
+  grid-area: prayerbar;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 4px;
+  font-size: 1.6vh;
+  flex-wrap: wrap;
+  /* height: 215px; */
+  /* max-width: 100%; */
+  margin-bottom: 16px;
+  margin-right: 16px;
+
+  background: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.2),
+    rgba(255, 255, 255, 0.03),
+    rgba(0, 0, 0, 0.2)
+  );
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8), 0 8px 20px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+/* COUNTDOWN */
+.countdown {
+  grid-area: countdown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+/* DIVIDER */
+.divider {
+  height: 2px;
+  width: 100%;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: linear-gradient(
+    to bottom,
+    rgba(228, 192, 123, 0.8),
+    rgba(228, 192, 123, 0)
+  );
+}

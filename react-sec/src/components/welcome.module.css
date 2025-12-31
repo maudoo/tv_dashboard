@@ -1,0 +1,44 @@
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-top: 0;
+}
+
+.messageContainer {
+  background-color: none;
+}
+
+.imageContainer {
+  display: flex;
+  /* background-color: #efe8e8; */
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin-top: -5px;
+  margin-bottom: -10px;
+}
+
+.image {
+  margin-top: 10px;
+  width: 190px;
+  height: 190px;
+}
+
+.message {
+  font-family:'Inter', sans-serif;
+  margin: 0px;
+  font-weight: 300;
+  font-size: 70px;
+  /* font-style: italic; */
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  
+  text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.4);
+}
