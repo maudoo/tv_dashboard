@@ -1,7 +1,7 @@
 # tv_dashboard
 
 Access the dashBoard using:
-https://iit-msa-tv.vercel.app/
+https://https://tv-v2.vercel.app/#
 
 click on the slideshow to turn on webcam.
 
