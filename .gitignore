@@ -1,0 +1,28 @@
+# secrets
+**/.env
+**/API_keys.json
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# node
+node_modules/
+dist/
+
+# runtime data
+backend/data/iqamahs.json
+
+# editor
+.idea/
+.vscode/
+
+# claude
+**/.claude/
+
+# OS
+.DS_Store
+Thumbs.db
